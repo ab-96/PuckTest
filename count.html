@@ -5,6 +5,15 @@
   <script src="https://www.puck-js.com/puck.js"></script>
   <button onclick="Puck.write('LED1.set();\n');">On!</button>
   <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
+  
+  <script>var presses = 0;
+   clearWatch(); // remove our last watch
+   setWatch(function(e) {
+   digitalWrite(LED1, e.state);
+   presses++;
+   console.log("Pressed "+presses);
+   }, BTN, { repeat: true });
+  </script>
 
   
   
