@@ -12,7 +12,7 @@
    setWatch(function(e) {
    digitalWrite(LED1, e.state);
    presses++;
-   console.log("Pressed "+presses);
+   document.write("Pressed "+presses);
    }, BTN, { repeat: true });
    </script>
    
