@@ -6,7 +6,7 @@
   <button onclick="Puck.write('LED1.set();\n');">On!</button>
   <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
 
- <script>
+   <script>
    var presses = 0;
    clearWatch(); // remove our last watch
    setWatch(function(e) {
@@ -14,7 +14,7 @@
    presses++;
    console.log("Pressed "+presses);
    }, BTN, { repeat: true });
- </script>
+   </script>
    
   
   
