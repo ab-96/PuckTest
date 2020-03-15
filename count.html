@@ -9,7 +9,7 @@
    <script> 
      var presses = 0;
      //clearWatch(); // remove our last watch
-     setWatch(function(e) {
+     function setWatch(function(e) {
      presses++;
      console.log("Pressed "+presses);
    }, BTN, { repeat: true });
