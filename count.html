@@ -7,8 +7,12 @@
   <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
   
   <script> 
-     setWatch(function(e) {
-     console.log("Button pressed");}
+      
+
+    setWatch(function() {
+    document.write("Pressed");
+    }, BTN, {edge:"rising", debounce:50, repeat:true});
+
              
   </script>
   
